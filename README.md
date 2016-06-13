@@ -9,6 +9,6 @@ while below it is displayed in an HTML `iframe`, as it would be within **CliDEsc
 
 <div align='center'>
 
-<iframe width="1200" height="750" align="middle" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://rawgit.com/nicolasfauchereau/drought_risk/master/notebooks/map.html"></iframe>
+<iframe width="1000" height="750" align="middle" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://rawgit.com/nicolasfauchereau/drought_risk/master/notebooks/map.html"></iframe>
 
 </div>
