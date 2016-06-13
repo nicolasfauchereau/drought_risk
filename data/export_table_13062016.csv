@@ -1,0 +1,149 @@
+,id,station_no,status_id,time_zone,id_aero,id_imo,id_marine,id_wmo,id_hydro,id_aust,id_niwa,id_niwa_agent,comments,country_code,start_date,end_date,ht_aero,ht_elev,ht_ssb,latitude,longitude,name_primary,name_secondary,region,catchment,authority,lu_0_100m,lu_100m_1km,lu_1km_10km,soil_type,surface_type,critical_river_height,location_datum,location_epsg,phenomena_kept
+0,296,1320100,1,SAM,,,,,,,,,Station ID by water Div as stated in the Flosys Server configuration,WS,2014-11-06,,,,,-13.9333,-171.75,Mt Le Pue AR,Rainfall,Upolu,,Water Resources Division,,,,,,,,,
+1,1166,6059,1,NZT,,,,91765,,,J76500,6059,,WS,1978-07-01,,,3.0,,-14.333,-170.717,SAMOA - PAGO PAGO AERO,Synop,Samoa,,,,,,,,,,,
+2,177,75900,1,SAM,NSFA,,,91759,,,J75900,6031,,WS,1905-09-05,,,3.0,,-13.8328,-171.994,Faleolo Intl,Climate,Upolu,,SMD,5.0,,,,5.0,,,,
+3,178,75901,1,SAM,,,,,,,J75901,6032,Original coordinates -13.8000 -171.9333. Updated coordinates from Google Earth,WS,1905-06-02,,,270.0,,-13.811,-171.939,Fasitoo Uta,Rainfall,Upolu,,SMD,,,,,,,,,
+4,179,75902,2,SAM,,,,,,,J75902,6033,,WS,1970-04-30,,,27.0,,-13.883,-172.017,Falelatai,Rainfall,Upolu,,SMD,,,,,,,,,
+5,180,75903,1,SAM,,,,,,,,,"Level its= Ok, Remain in North position, clean both the outer and the inner tube.",WS,1905-05-23,,,65.0,,-13.95,-171.9167,Matautu Lefaga,Rainfall,Upolu,,SMD,,,,,,,,,
+6,181,75904,2,SAM,,,,,,,,,"Installed by Taala, Niko and Sagato. P.M.S Raingauge. Original coordinates -13.9353 -171.5469. Coordinates updated using Google Earth.",WS,1995-02-28,2003-01-30,,2.0,,-13.943,-171.556,Maasina Fagaloa,Rainfall,Upolu,,SMD,7.0,,,,,,,,
+7,182,75905,2,SAM,,,,,,,,,Original coordinates -14.0833 -171.5833. Updated coordinates from Google Earth.,WS,1905-06-17,2013-10-23,,56.0,,-14.0311,-171.609,Salani Falealili,Rainfall,Upolu,,SMD,,,,,,,,,
+8,183,75906,1,SAM,,,,,,,,,,WS,1905-06-17,,,45.0,,-13.9833,-171.8333,Nuusuatia,Rainfall,Upolu,,SMD,,,,,,,,,
+9,184,75907,2,SAM,,,,,,,,,,WS,1905-06-17,2013-10-25,,210.0,,-13.8333,-171.9167,Leauva'a Uta,Rainfall,Upolu,,SMD,,,,,,,,,
+10,185,75908,2,SAM,,,,,,,,,,WS,1905-06-17,2013-10-22,,270.0,,-14.0,-171.4833,Ti'avea Uta,Rainfall,Upolu,,SMD,,,,,,,,,
+11,186,75909,2,SAM,,,,,,,,,Original coordinates -14.0270 -171.4130. Coordinates updated using Google Earth.,WS,1997-01-01,2014-05-09,,3.0,,-14.0451,-171.439,Vailoa Aleipata,Rainfall,Upolu,,SMD,,,,,,,,,
+12,187,75911,2,SAM,,,,,,,,,"Closed, but its now worked together with EPC by using their Tipping Backet rain gauge.",WS,1905-05-23,,,60.0,,-13.9167,-171.6167,Sauniatu,Rainfall,Upolu,,SMD,,,,,,,,,
+13,188,75912,2,SAM,,,,,,,,,Original coordinates -13.8650 -171.5870. Coordinates updated using Google Earth.,WS,1997-01-01,2000-01-31,,20.0,,-13.8746,-171.597,Piula,Rainfall,Upolu,,SMD,,,,,,,,,
+14,189,75919,2,SAM,,,,,,,,,,WS,1975-01-01,,,,,-13.93,-171.96,Faleseela,Rainfall,Upolu,,SMD,,,,,,,,,
+15,190,75920,1,SAM,,,,,,,,,,WS,2005-11-14,,,15.0,,-14.0397,-171.5236,Lepa,Rainfall,Upolu,,SMD,,,,,,,,,
+16,191,75921,1,SAM,,,,,,,,,,WS,2007-10-20,,,5.0,,-14.017,-171.678,Saleilua Falealili,Rainfall,Upolu,,SMD,,,,,,,,,
+17,192,75922,1,SAM,,,,,,,,,Original coordinates -13.6500 -171.7667. Updated coordinates from Google Earth.,WS,1905-06-16,,,6.0,,-13.8309,-171.772,Savalalo,Rainfall,Upolu,,SMD,,,,,,,,,
+18,193,75923,1,SAM,,,,,,,,,,WS,2007-10-20,,,620.0,,-13.861,-171.8315,Tanumapua,Rainfall,Upolu,,SMD,,,,,,,,,
+19,194,75924,2,SAM,,,,,,,,,,WS,1905-06-14,2008-10-04,,8.0,,-13.9,-172.05,Samatau,Rainfall,Upolu,,SMD,4.0,,,,,,,,
+20,195,75925,2,SAM,,,,,,,,,,WS,1975-11-01,,,65.0,,-13.85,-171.78,Afulilo,Rainfall,Upolu,,SMD,,,,,,,,,
+21,196,75926,2,SAM,,,,,,,J75903,6034,,WS,1970-07-31,,,3.0,,-13.933,-171.95,Savaia,Rainfall,Upolu,,SMD,,,,,,,,,
+22,197,75927,2,SAM,,,,,,,J76209,6053,,WS,1970-07-31,,,15.0,,-13.967,-171.85,Sataoa,Rainfall,Savaii,,SMD,,,,,,,,,
+23,265,75928,1,SAM,,,,,,,,,Coordinates updated using Google Earth,WS,2004-01-01,,,,,-13.8265,-171.804,Vaitele,Rainfall,Upolu,,SMD,,,,,4.0,,,,
+24,266,75929,1,SAM,,,,,,,,,Coordinates updated from Lameko Simanu (lameko.simanu@mnre.gov.ws),WS,1991-01-01,,,,,-13.9111,-171.8194,Lake Lanutoo,Rainfall,Upolu,,WRD,,,,,,,,,
+25,267,75930,1,SAM,,,,,,,,,Coordinates and elevation updated using information from Lameko Simanu (lameko.simanu@mnre.gov.ws),WS,1995-01-01,,,617.3,,-13.8942,-171.8756,Sigaele,Rainfall,Upolu,,WRD,,,,,,,,,
+26,268,75931,1,SAM,,,,,,,,,Coordinates from Google Earth,WS,1991-11-01,,,,,-13.899,-171.939,Tanumalala,Rainfall,Upolu,,WRD,,,,,,,,,
+27,269,75932,1,SAM,,,,,,,,,WRD do not recognise this station. May be an old closed station. No coordinate information available.,WS,1991-11-01,,,,,0.0,0.0,Sopoaga,Rainfall,Upolu,,WRD,,,,,,,,,
+28,270,75933,1,SAM,,,,,,,,,Coordinates updated using information from Lameko Simanu (lameko.simanu@mnre.gov.ws,WS,1991-11-01,,,170.0,,-13.9797,-171.7897,Mulivai Safata,Rainfall,Upolu,,WRD,,,,,,,,,
+29,273,75934,2,SAM,,,,,,,,,Coordinates updated from Google Earth.,WS,2010-07-14,,,,,-13.8523,-171.751,Papaigalagala,Rainfall,Upolu,,National University of Samoa,1.0,,,,5.0,,,,
+30,274,75935,1,SAM,,,,,,,,,"Installed by Billy, Wairarapa and Toluiva. Coordinates updated from Google Earth.",WS,2006-07-06,,,,,-13.9127,-171.555,Saletele Fagaloa,Rainfall,Upolu,,SMD,7.0,,,,6.0,,,,
+31,276,75936,2,SAM,,,,,,,,,Installed by Sunny Seuseu and Faalavelave Taulapapa. ,WS,2008-10-17,2015-03-05,,,,-13.8542,-172.059,Satuimalufilufi,Rainfall,Upolu,,SMD,,,,,5.0,,,,
+32,297,75937,1,SAM,,,,,,,,,Google Earth coordinates ,WS,2015-03-06,,,,,-13.8971,-172.0071,Matautu Falelatai,Rainfall,Upolu,,Edna Tuifao,,,,,,,,,
+33,198,76000,1,SAM,,,,,,,J76000,6035,Original coordinates -13.4833 -172.7667. Updated coordinates from Google Earth,WS,1905-06-19,,,25.0,,-13.519,-172.645,Asau ForestryDiv HQ,Climate,Savaii,,SMD,,,,,5.0,,,,
+34,199,76001,2,SAM,,,,91755,,,J76001,6036,,WS,1905-05-28,,,386.0,,-13.5333,-172.65,Asau Forestry,Climate,Savaii,,SMD,,,,,,,,,
+35,200,76002,2,SAM,,,,,,,J76002,6037,"Replace outer can of the sparce rain gauge on the 12th of July, due to the poor condition of the rain gauge. 
+
+Billy removed raingauge from Falelima during his visit in mid DEc with Iakopo ",WS,1980-02-19,2013-12-01,,117.0,,-13.5773,-172.7285,Falelima,Rainfall ,Savaii,,SMD,,,,,,,,,
+36,201,76003,2,SAM,,,,,,,J76003,6038,Original coordinates -13.4830 -172.7670. Updated coordinates from Google Earth,WS,1967-07-31,,,5.0,,-13.4952,-172.771,Falealupo,Rainfall,Savaii,,SMD,,,,,,,,,
+37,202,76004,1,SAM,,,,,,,J76004,6039,Original coordinates -13.7833 -172.5800. Updated coordinates from Google Earth.,WS,1905-03-17,,,22.0,,-13.7181,-172.592,Salailua,Rainfall,Savaii,,SMD,,,,,,,,,
+38,203,76005,2,SAM,,,,,,,J76005,6040,,WS,1924-01-31,,,6.0,,-13.75,-172.317,Satupaitea,Rainfall,Savaii,,SMD,,,,,,,,,
+39,204,76006,2,SAM,,,,,,,J76006,6041,Original coordinates -13.4340 -172.3450. Updated coordiantes from Google Earth.,WS,1923-12-31,1985-05-26,,3.0,,-13.4411,-172.354,Fagamalo,Rainfall,Savaii,,SMD,,,,,,,,,
+40,205,76007,2,SAM,,,,,,,,,,WS,1905-03-19,2009-12-31,,12.0,,-13.75,-172.3,Vaitoomuli,Rainfall,Savaii,,SMD,4.0,4.0,,3.0,5.0,,,,
+41,206,76008,2,SAM,,,,,,,J76008,6043,,WS,1982-12-31,,,370.0,,-13.65,-172.217,Vaiaata,Rainfall,Savaii,,SMD,,,,,,,,,
+42,207,76009,1,SAM,,,,,,,,,,WS,1905-03-27,,,25.0,,-13.7833,-172.5,Taga,Rainfall,Savaii,,SMD,,,,,,,,,
+43,208,76010,2,SAM,,,,,,,,,,WS,1905-06-14,2001-12-31,,44.0,,-13.4833,-172.4667,Matavai,Rainfall,Savaii,,SMD,,,,,,,,,
+44,209,76011,2,SAM,,,,,,,,,Original Coordinates -13.5833 -172.2000. Updated coordinates from Google Earth,WS,1905-06-19,,,3.0,,-13.6756,-172.178,Fatausi,Rainfall,Savaii,,SMD,,,,,,,,,
+45,210,76012,1,SAM,,,,,,,,,"Original coordinates -13.5667 -172.7500. Updated coordinates from Google Earth.
+
+Station closed after Dec 31st and replaced by Auto raingauge...",WS,1905-06-17,2015-01-01,,65.0,,-13.4855,-172.474,Letui,Rainfall,Savaii,,SMD,,,,,,,,,
+46,211,76013,2,SAM,,,,,,,,,,WS,1995-07-27,2013-10-29,,81.0,,-13.5208,-172.2769,Samalaeulu,Rainfall,Savaii,,SMD,,,,,,,,,
+47,212,76014,1,SAM,,,,,,,,,,WS,1905-06-17,,,47.0,,-13.7597,-172.3708,Sili,Rainfall,Savaii,,SMD,,,,,,,,,
+48,213,76015,1,SAM,,,,,,,,,,WS,1905-06-17,,,88.0,,-13.7358,-172.2213,Salelologa,Rainfall,Savaii,,SMD,4.0,,,3.0,5.0,,,,
+49,214,76016,1,SAM,,,,,,,,,Original coordinates -13.4333 -172.2000. Updated coordinates from Google Earth.,WS,1905-06-18,,,3.0,,-13.5863,-172.214,Puapua,Rainfall,Savaii,,SMD,,,,,,,,,
+50,215,76017,2,SAM,,,,,,,,,,WS,1905-06-18,,,55.0,,-13.7,-172.5833,Vaipu-a,Rainfall,Savaii,,SMD,,,,,,,,,
+51,216,76018,1,SAM,,,,,,,,,Original coordinates -13.6803 -171.6275. Updated coordinates from Google Earth.,WS,1997-01-01,,,45.0,,-13.6792,-172.631,Fogasavaii,Rainfall,Savaii,,SMD,,,,,,,,,
+52,217,76019,1,SAM,,,,,,,,,,WS,2009-01-19,,,,,-13.7035,-172.203,Lalomalava,Rainfall,Savaii,,SMD,,,,,,,,,
+53,218,76020,2,SAM,,,,,,,,,,WS,2010-02-23,2013-07-18,,143.0,,-13.525,-172.73,Papa Sataua,Rainfall,Savaii,,SMD,4.0,4.0,6.0,,,,,,
+54,219,76021,1,SAM,,,,,,,,,Coordinates updated on 23/11/2011 using cell phone GPS.,WS,2010-07-02,,,721.0,,-13.9084,-171.782,Afiamalu AWS,AWS-NIWA,Upolu,,NIWA,,,,,,,,,
+55,220,76022,2,SAM,,,,,,,,,,WS,2003-10-31,2014-04-15,,281.0,,-13.5425,-172.5233,Aopo,Rainfall,Savaii,,SMD,,,,,,,,,
+56,221,76023,2,SAM,NSAU,,,91760,,,,,Original coordinates-13.5000 -172.6300. Coordinates updated using Google Earth,WS,1968-04-30,1990-03-01,,4.0,,-13.5058,-172.63,Asau AWS,AWS-NOAA,Savaii,,NOAA,,,,,,,,,
+57,222,76024,1,SAM,,,,91757,,,,,Original coordinates -13.6000 -172.2167. Updated coordinates from Google Earth.,WS,1905-06-14,,,10.0,,-13.448,-172.362,Avao AWS,AWS-NOAA,Savaii,,NOAA,,,,,,,,,
+58,223,76025,1,SAM,,,,91761,,,,,,WS,1905-06-21,,,150.0,,-13.75,-172.5333,Lata AWS,AWS-NOAA,Savaii,,NOAA,,,,,,,,,
+59,224,76026,1,SAM,NSMA,,,,,,J76009,36838,,WS,2004-11-01,,,22.0,,-13.7485,-172.2521,Maota,Climate,Savaii,,SMD,,,,,,,,,
+60,225,76027,1,SAM,,,,,,,,,,WS,2010-02-19,,,12.0,,-13.7524,-172.3099,Vailoa Palauli,Rainfall,Savaii,,SMD,,,,,,,,,
+61,226,76028,1,SAM,,,,91735,,,,,,WS,1900-01-04,,,119.0,,-13.4613,-172.3888,Le Piu Tai AWS,AWS-JICA,Savaii,,SMD,,,,,,,,,
+62,227,76029,1,SAM,,,,91736,,,,,,WS,1900-01-06,,,21.0,,-13.7485,-172.2521,Maota Int Airport AWS,AWS-JICA,Savaii,,SMD,,,,,,,,,
+63,228,76030,1,SAM,,,,91737,,,,,,WS,1900-01-07,,,234.0,,-13.5336,-172.764,Mt Talu AWS,AWS-JICA,Savaii,,SMD,,,,,,,,,
+64,229,76031,1,SAM,,,,,,,,,Original coordinates -13.5702 -172.7466. Updated coordinates from Google Earth.,WS,1905-03-20,,,31.0,,-13.5692,-172.745,Neiafu,Rainfall,Savaii,,SMD,,,,,,,,,
+65,230,76032,1,SAM,,,,,,,,,,WS,1905-04-07,,,62.0,,-13.45,-172.3667,Vaipouli,Rainfall,Savaii,,SMD,,,,,,,,,
+66,271,76033,2,SAM,,,,,,,J76007,6042,,WS,1979-12-31,1984-11-30,,,,-13.617,-172.267,Tailematao,Rainfall,Savaii,,SMD,,,,,,,,,
+67,272,76034,1,SAM,,,,,,,,,Coordinates updated from Google Earth.,WS,2006-08-01,,,,,-13.6706,-172.18,Fogapoa,Rainfall,Savaii,,SMD,,,,,,,,,
+68,275,76035,2,SAM,,,,,,,,,Coordinates updated from Google Earth.,WS,2002-02-07,2014-04-15,,76.0,,-13.4651,-172.417,Lefagaoalii Safune,Rainfall,Savaii,,SMD,,,,,,,,,
+69,277,76036,2,SAM,,,,,,,,,,WS,1992-08-24,1994-04-30,,,,-13.5214,-172.418,Ologogo Farm,Rainfall,Savaii,,SMD,9.0,6.0,,,4.0,,,,
+70,280,76037,2,SAM,,,,,,,,,lat/long estimated from google earth,WS,1975-01-01,1977-12-31,,,,-13.6634,-172.2252,Logoipulotu,Climate,Savaii,,SMD,9.0,6.0,,6.0,4.0,,,,
+71,282,76038,1,SAM,,,,,,,,,,WS,2013-03-27,,,23.0,,-13.71,-172.6,Salailua AWS,AWS-NIWA,Savaii,,Samoa Meteorology Division,,,,,,,,,
+72,286,76039,1,SAM,,,,,,,,," Note: latt/long estimated from Google earth software
+
+Change secondary name for AR station 29/08/2014 to put them under 1 category. This is to easily search them in Clides ",WS,2013-10-29,,,,,-13.5205,-172.2782,Samalaeulu AR,Rainfall,Savaii,,Samoa Meteorology Division,4.0,,,3.0,6.0,,,,
+73,291,76040,1,SAM,,,,,,,,,"Note: the latt/long was estimated from Google Earth software
+
+Change secondary name for AR station 29/08/2014 to put them under 1 category. This is to easily search them in Clides ",WS,2014-04-15,,,,,-13.4705,-172.4171,Lefagaoalii AR,Rainfall,Savaii,,Samoa Met services,,,,,,,,,
+74,290,76041,1,SAM,,,,,,,,,"Note: latt/long estimated from Google earth software 28/05/2014
+
+Change secondary name for AR station 29/08/2014 to put them under 1 category. This is to easily search them in Clides ",WS,2014-04-15,,,,,-13.5412,-172.5229,Aopo AR,Rainfall,Savaii,,Samoa Met services,,,,,,,,,
+75,288,76042,1,SAM,,,,,,,,,"Note: latt/long estimated from Google Earth software
+
+Change secondary name for AR station 29/08/2014 to put them under 1 category. This is to easily search them in Clides ",WS,2013-10-30,,,,,-13.6662,-172.1772,Tuasivi Hospital Rain Gauge,Rainfall,Savaii,,SMD,4.0,,,,,,,,
+76,294,76044,1,SAM,,,,,,,,,,WS,2014-12-12,,,,,-13.5773,-172.7285,Falelima AR,Rainfall,Savaii,,Samoa Met,,,,,,,,,
+77,295,76045,1,SAM,,,,,,,,,,WS,2014-12-11,,,,,-13.4855,-172.474,Letui AR,Rainfall,Savaii,,Samoa Met,,,,,,,,,
+78,287,76046,1,SAM,,,,,,,,,,WS,2013-10-28,,,370.0,,-13.6301,-172.259,Vaiaata AWS,AWS-NIWA,Savaii,,SMD,9.0,,,,,,,,
+79,292,76048,1,SAM,,,,,,,,,"same as the latt/long of manual rain gauge
+
+Change secondary name for AR station 29/08/2014 to put them under 1 category. This is to easily search them in Clides ",WS,2014-05-09,,,,,-14.045,-171.438,Vailoa.A AR,Rainfall,Upolu,,SMD,,,,,,,,,
+80,231,76200,1,SAM,NSAP,,,91762,,,J76200,6044,This station is located on the same location since establishment more than 100 years ago. ,WS,1905-03-04,,,2.0,,-13.8153,-171.7797,Apia Observatory,Climate,Upolu,,SMD,,,,5.0,5.0,,,,
+81,232,76201,1,SAM,,,,,,,J76201,6045,,WS,1967-01-01,,,80.0,,-13.8591,-171.7933,Alafua,Climate,Upolu,,SMD,,,,,,,,,
+82,233,76202,1,SAM,,,,,,,J76202,6046,Daily observations (precip and air temperatures) from Jan 1989 to Dec 1992 entered for Nafanua was sourced from excel files found in archives and not from Climatological Fieldbooks. Fieldbooks for this time period remain missing from the vault. ,WS,1905-05-18,,,100.0,,-13.85,-171.75,Nafanua,Climate,Upolu,,SMD,,,,,,,,,
+83,234,76203,2,SAM,,,,,,,J76203,6047,,WS,1964-01-31,1978-01-01,,213.0,,-13.867,-171.75,Avele Farm,Climate,Upolu,,Govt Samoa,,,,,,,,,
+84,235,76204,1,SAM,,,,,,,J76204,6048,,WS,1905-05-19,,,688.0,,-13.9,-171.7667,Afiamalu,Climate,Upolu,,SMD,6.0,,,,,,,,
+85,236,76205,1,SAM,,,,,,,J76205,6049,,WS,1905-06-04,,,100.0,,-14.0167,-171.7167,Togitogiga Falealili,Climate,Upolu,,SMD,,,,,,,,,
+86,237,76206,1,SAM,,,,,,,J76206,6050,Original coordinates -13.8500 -171.7000. Coordinates updated using Google Earth,WS,1905-05-23,,,12.0,,-13.862,-171.7,Laulii,Rainfall,Upolu,,SMD,,,,,,,,,
+87,238,76207,1,SAM,,,,,,,J76207,6051,,WS,1902-12-31,,,380.0,,-13.85,-171.783,Moamoa,Rainfall,Upolu,,SMD,,,,,,,,,
+88,239,76208,2,SAM,,,,,,,J76208,6052,,WS,1975-08-31,,,473.0,,-13.95,-171.588,Lemafa,Rainfall,Upolu,,SMD,,,,,,,,,
+89,262,76210,2,SAM,,,,,,,J76210,6054,,WS,,,,,,-13.983,-171.7,Togitogiga Cf,Climate,Upolu,,SMD,,,,,,,,,
+90,240,76211,1,SAM,,,,,,,J76211,6055,,WS,1905-04-17,,,334.0,,-14.0333,-171.55,Lotofaga A.,Rainfall,Upolu,,SMD,,,,,,,,,
+91,263,76212,2,SAM,,,,,,,J76212,6056,,WS,,,,,,-14.0,-171.717,Togitogiga,Climate,Upolu,,SMD,,,,,,,,,
+92,264,76213,2,SAM,,,,,,,J76213,6057,,WS,,,,,,-14.017,-171.7,Togitogiga Ag,Climate,Upolu,,SMD,,,,,,,,,
+93,241,76214,1,SAM,,,,,,,J76214,6058,,WS,1905-05-10,,,896.0,,-13.9167,-171.75,Alaoa,Rainfall,Upolu,,SMD,,,,,,,,,
+94,242,76215,1,SAM,,,,,,,,,Coordinates updated on 23/11/2011 using cellphone GPS.,WS,2010-07-24,,,61.0,,-13.8345,-171.8345,Nuu AWS,AWS-NIWA,Upolu,,NIWA,,,,,,,,,
+95,243,76216,1,SAM,,,,,,,,,,WS,2010-07-08,,,85.0,,-13.8593,-171.7935,Alafua AWS,AWS-NIWA,Upolu,,NIWA,,,,,,,,,
+96,244,76217,1,SAM,,,,,,,,,,WS,2009-05-13,,,230.0,,-13.853,-171.852,Aleisa AWS,AWS-JICA,Upolu,,SMD,,,,,,,,,
+97,246,76219,1,SAM,,,,,,,,,,WS,2005-09-14,,,4.0,,-13.8202,-171.7755,Apia AWS,AWS-JICA,Upolu,,SMD,,,,,,,,,
+98,247,76220,2,SAM,,,,917691,,,J76900,11338,,WS,1994-12-31,,,10.0,,-14.033,-171.767,Cape Nuutoi AWS,AWS-NOAA,Upolu,,NOAA,,,,,,,,,
+99,248,76221,1,SAM,,,,91763,,,J76300,10343,Original coordinates -14.0500 -171.4500. Updated coordinates from Google Earth.,WS,1994-06-15,,,34.0,,-14.045,-171.441,Cape Tapaga AWS,AWS-NOAA,Upolu,,NOAA,,,,,,,,,
+100,249,76222,1,SAM,,,,,,,,,This station was installed as part of the Japanese funded Improvement of Weather Observations Project,WS,2009-05-13,,,61.0,,-13.883,-171.7386,Fagalii Airport AWS,AWS-JICA,Upolu,,SMD,5.0,3.0,,6.0,,,,,
+101,250,76223,1,SAM,,,,91758,,,,,"Original coordinates -13.8167 -171.9830
+Located in the sea.
+Coordinates updated to -13.8367 -171.9830
+Now located near Faleolo Int East station",WS,1905-06-13,,,2.0,,-13.8367,-171.983,Faleolo Apt AWS,AWS-JICA,Upolu,,SMD,,,,,,,,,
+102,251,76224,1,SAM,,,,,,,,,,WS,2009-05-13,,,990.0,,-13.9305,-171.7958,Mt Fiamoe AWS,AWS-JICA,Upolu,,SMD,,,,,,,,,
+103,252,76225,1,SAM,,,,,,,,,,WS,2010-06-29,,,140.0,,-13.858,-171.7622,Nafanua AWS,AWS-NIWA,Upolu,,NIWA,,,,,,,,,
+104,253,76226,1,SAM,,,,91756,,200814,J75600,11332,,WS,1993-02-26,,,0.0,,-13.8267,-171.7611,Apia Samoa NTC AWS,AWS-BOM,Upolu,,BOM,,,,,,,,,
+105,254,76227,1,SAM,,,,91769,,,,,Original coordinates -14.0500 -171.7500. Coordinates updated using Google Earth,WS,1905-06-22,,,2.0,,-14.008,-171.815,Tafitoala AWS,AWS-NOAA,Upolu,,NOAA,,,,,,,,,
+106,255,76228,1,SAM,,,,91738,,,,,,WS,1900-01-01,,,8.0,,-13.8357,-171.9812,Faleolo Int East AWS,AWS-JICA,Upolu,,SMD,,,,,,,,,
+107,256,76229,1,SAM,,,,91739,,,,,,WS,1900-01-02,,,18.0,,-13.833,-172.0126,Faleolo Int West AWS,AWS-JICA,Upolu,,SMD,,,,,,,,,
+108,257,76230,1,SAM,,,,91740,,,,,,WS,1900-01-05,,,44.0,,-13.8526,-172.1005,Manono AWS,AWS-JICA,Manono,,SMD,,,,,,,,,
+109,258,76231,1,SAM,,,,91741,,,,,"Current coordinates we're derive from google earth app.
+
+old coordinates
+-13.8782S
+-171.6014W",WS,1900-01-08,,,25.0,,-13.8757,-171.5974,Lufilufi AWS,AWS-JICA,Upolu,,SMD,,,,,,,,,
+110,259,76232,1,SAM,,,,91742,,,,,Original coordinates -14.3502 -171.7166. Updated coordiantes from Google Earth.,WS,1900-01-09,,,24.0,,-14.0435,-171.748,Togitogiga AWS,AWS-JICA,Upolu,,SMD,,,,,,,,,
+111,260,76233,1,SAM,,,,91743,,,,,,WS,1900-01-03,,,290.0,,-13.9613,-171.5955,Le Mafa AWS,AWS-JICA,Upolu,,SMD,,,,,,,,,
+112,281,76235,2,SAM,,,,,,,,,Temp lat/long for testing,WS,1996-03-01,1997-12-31,,,,0.0,0.0,Fagali'i ,Climate,Upolu,,SMD,5.0,3.0,,6.0,5.0,,,,
+113,278,76236,1,SAM,,,,,,,,,"This station was installed by Billy and Faalavelave Taulapapa, and also this observer was in Papa Sataua Primary School as a Head Teacher but he shifted to Sasina Primary with his rain gauge 
+
+latt/long estimated from google earth",WS,2011-07-04,,,,,-13.4727,-172.4477,Sasina Primary School,Rainfall,Savaii,,Sauiluma Pulega,,,,,,,,,
+114,283,76237,1,SAM,,,,,,,,,"Note: latt/long estimated from Google earth software
+
+Change secondary name for AR station 29/08/2014 to put them under 1 category. This is to easily search them in Clides ",WS,2013-10-22,,,350.0,,-13.9945,-171.4961,Ti'avea Uta AR,Rainfall,Upolu,,Samoa Meteorology Division,4.0,9.0,,3.0,4.0,,,,
+115,293,76240,1,SAM,,,,,,,,,,WS,2014-12-12,,,,,-13.519,-172.645,Asau AR,Rainfall,Savaii,,Samoa Met,,,,,,,,,
+116,289,76241,1,SAM,,,,,,,,,Coordinates from Google earth,WS,2013-11-05,,,,,-13.8841,-171.607,Saoluafata Uta AWS,AWS-NIWA,Upolu,,Samoa Meteorology Division,6.0,,,3.0,4.0,,,,
+117,285,76242,1,SAM,,,,,,,,,"The GPS position of this station was estimated from Google Earth.
+
+Change secondary name for AR station 29/08/2014 to put them under 1 category. This is to easily search them in Clides ",WS,2013-10-25,,,,,-13.8529,-171.8659,Leauva'a Uta AR,Rainfall,Upolu,,Samoa Meteorology Division,4.0,,,3.0,6.0,,,,
+118,284,76243,1,SAM,,,,,,,,,"Note: latt/long estimated from Google earth software
+
+Change secondary name for AR station 29/08/2014 to put them under 1 category. This is to easily search them in Clides ",WS,2013-10-23,,,,,-14.0326,-171.61,Salani Falealili AR,Rainfall,Upolu,,Samoa Meteorology Division,4.0,,,3.0,4.0,,,,
