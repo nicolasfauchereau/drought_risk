@@ -1,0 +1,731 @@
+<!DOCTYPE html> <html> <head> <title>README.md</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> .markdown-katex-preview pre::shadow .bracket-matcher .region { animation: bracket-animation 0.85s; border: 1px solid rgba(188, 199, 210, 0.45098); }
+.markdown-katex-preview pre, .markdown-katex-preview .host { color: rgb(188, 199, 210); background-color: rgb(48, 53, 65); }
+.markdown-katex-preview pre .wrap-guide, .markdown-katex-preview .host .wrap-guide { background-color: rgb(80, 86, 98); }
+.markdown-katex-preview pre .indent-guide, .markdown-katex-preview .host .indent-guide { color: rgb(80, 86, 98); }
+.markdown-katex-preview pre .invisible-character, .markdown-katex-preview .host .invisible-character { color: rgb(61, 66, 75); }
+.markdown-katex-preview pre .gutter, .markdown-katex-preview .host .gutter { color: rgb(99, 105, 121); background-color: rgb(43, 48, 59); }
+.markdown-katex-preview pre .gutter .line-number, .markdown-katex-preview .host .gutter .line-number { width: 100%; }
+.markdown-katex-preview pre .gutter .line-number.cursor-line, .markdown-katex-preview .host .gutter .line-number.cursor-line { color: rgb(123, 130, 147); background-color: rgb(48, 53, 65); }
+.markdown-katex-preview pre .gutter .line-number.cursor-line-no-selection, .markdown-katex-preview .host .gutter .line-number.cursor-line-no-selection { color: rgb(123, 130, 147); }
+.markdown-katex-preview pre .gutter .line-number.folded, .markdown-katex-preview .host .gutter .line-number.folded, .markdown-katex-preview pre .gutter .line-number::after, .markdown-katex-preview .host .gutter .line-number::after, .markdown-katex-preview pre .fold-marker::after, .markdown-katex-preview .host .fold-marker::after { color: rgb(125, 133, 145); }
+.markdown-katex-preview pre .invisible, .markdown-katex-preview .host .invisible { color: rgb(188, 199, 210); }
+.markdown-katex-preview pre .cursor, .markdown-katex-preview .host .cursor { color: rgb(255, 255, 255); }
+.markdown-katex-preview pre .selection .region, .markdown-katex-preview .host .selection .region { background-color: rgb(69, 75, 86); }
+.markdown-katex-preview pre .search-results .marker .region, .markdown-katex-preview .host .search-results .marker .region { border: 1px solid rgb(125, 133, 145); background-color: transparent; }
+.markdown-katex-preview pre .search-results .marker.current-result .region, .markdown-katex-preview .host .search-results .marker.current-result .region { border: 1px solid rgb(255, 255, 255); }
+.markdown-katex-preview { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 1.6; color: rgb(188, 199, 210); overflow: auto; margin: 10px 13px; padding: 2em; background-color: rgb(48, 53, 65); }
+.markdown-katex-preview .mermaid .label { color: rgb(51, 51, 51); }
+.markdown-katex-preview .node rect, .markdown-katex-preview .node circle, .markdown-katex-preview .node ellipse, .markdown-katex-preview .node polygon { fill: rgb(236, 236, 255); stroke: rgb(204, 204, 255); stroke-width: 1px; }
+.markdown-katex-preview .edgePath .path { stroke: rgb(51, 51, 51); }
+.markdown-katex-preview .edgeLabel { background-color: rgb(232, 232, 232); }
+.markdown-katex-preview .cluster rect { fill: rgb(255, 255, 222) !important; rx: 4px !important; stroke: rgb(170, 170, 51) !important; stroke-width: 1px !important; }
+.markdown-katex-preview .cluster text { fill: rgb(51, 51, 51); }
+.markdown-katex-preview .actor { stroke: rgb(204, 204, 255); fill: rgb(236, 236, 255); }
+.markdown-katex-preview text.actor { fill: black; stroke: none; }
+.markdown-katex-preview .actor-line { stroke: grey; }
+.markdown-katex-preview .messageLine0 { stroke-width: 1.5px; stroke: rgb(51, 51, 51); }
+.markdown-katex-preview .messageLine1 { stroke-width: 1.5px; stroke: rgb(51, 51, 51); }
+.markdown-katex-preview #arrowhead { fill: rgb(51, 51, 51); }
+.markdown-katex-preview #crosshead path { fill: rgb(51, 51, 51) !important; stroke: rgb(51, 51, 51) !important; }
+.markdown-katex-preview .messageText { fill: rgb(51, 51, 51); stroke: none; }
+.markdown-katex-preview .labelBox { stroke: rgb(204, 204, 255); fill: rgb(236, 236, 255); }
+.markdown-katex-preview .labelText { fill: black; stroke: none; }
+.markdown-katex-preview .loopText { fill: black; stroke: none; }
+.markdown-katex-preview .loopLine { stroke-width: 2px; stroke: rgb(204, 204, 255); }
+.markdown-katex-preview .note { stroke: rgb(170, 170, 51); fill: rgb(255, 245, 173); }
+.markdown-katex-preview .noteText { fill: black; stroke: none; font-family: 'trebuchet ms', verdana, arial; font-size: 14px; }
+.markdown-katex-preview .section { stroke: none; opacity: 0.2; }
+.markdown-katex-preview .section0 { fill: rgba(102, 102, 255, 0.490196); }
+.markdown-katex-preview .section2 { fill: rgb(255, 244, 0); }
+.markdown-katex-preview .section1, .markdown-katex-preview .section3 { fill: white; opacity: 0.2; }
+.markdown-katex-preview .sectionTitle0 { fill: rgb(51, 51, 51); }
+.markdown-katex-preview .sectionTitle1 { fill: rgb(51, 51, 51); }
+.markdown-katex-preview .sectionTitle2 { fill: rgb(51, 51, 51); }
+.markdown-katex-preview .sectionTitle3 { fill: rgb(51, 51, 51); }
+.markdown-katex-preview .sectionTitle { text-anchor: start; font-size: 11px; }
+.markdown-katex-preview .grid .tick { stroke: lightgrey; opacity: 0.3; shape-rendering: crispEdges; }
+.markdown-katex-preview .grid path { stroke-width: 0px; }
+.markdown-katex-preview .today { fill: none; stroke: red; stroke-width: 2px; }
+.markdown-katex-preview .task { stroke-width: 2px; }
+.markdown-katex-preview .taskText { text-anchor: middle; font-size: 11px; }
+.markdown-katex-preview .taskTextOutsideRight { fill: black; text-anchor: start; font-size: 11px; }
+.markdown-katex-preview .taskTextOutsideLeft { fill: black; text-anchor: end; font-size: 11px; }
+.markdown-katex-preview .taskText0, .markdown-katex-preview .taskText1, .markdown-katex-preview .taskText2, .markdown-katex-preview .taskText3 { fill: white; }
+.markdown-katex-preview .task0, .markdown-katex-preview .task1, .markdown-katex-preview .task2, .markdown-katex-preview .task3 { fill: rgb(138, 144, 221); stroke: rgb(83, 79, 188); }
+.markdown-katex-preview .taskTextOutside0, .markdown-katex-preview .taskTextOutside2 { fill: black; }
+.markdown-katex-preview .taskTextOutside1, .markdown-katex-preview .taskTextOutside3 { fill: black; }
+.markdown-katex-preview .active0, .markdown-katex-preview .active1, .markdown-katex-preview .active2, .markdown-katex-preview .active3 { fill: rgb(191, 199, 255); stroke: rgb(83, 79, 188); }
+.markdown-katex-preview .activeText0, .markdown-katex-preview .activeText1, .markdown-katex-preview .activeText2, .markdown-katex-preview .activeText3 { fill: black !important; }
+.markdown-katex-preview .done0, .markdown-katex-preview .done1, .markdown-katex-preview .done2, .markdown-katex-preview .done3 { stroke: grey; fill: lightgrey; stroke-width: 2px; }
+.markdown-katex-preview .doneText0, .markdown-katex-preview .doneText1, .markdown-katex-preview .doneText2, .markdown-katex-preview .doneText3 { fill: black !important; }
+.markdown-katex-preview .crit0, .markdown-katex-preview .crit1, .markdown-katex-preview .crit2, .markdown-katex-preview .crit3 { stroke: rgb(255, 136, 136); fill: red; stroke-width: 2px; }
+.markdown-katex-preview .activeCrit0, .markdown-katex-preview .activeCrit1, .markdown-katex-preview .activeCrit2, .markdown-katex-preview .activeCrit3 { stroke: rgb(255, 136, 136); fill: rgb(191, 199, 255); stroke-width: 2px; }
+.markdown-katex-preview .doneCrit0, .markdown-katex-preview .doneCrit1, .markdown-katex-preview .doneCrit2, .markdown-katex-preview .doneCrit3 { stroke: rgb(255, 136, 136); fill: lightgrey; stroke-width: 2px; cursor: pointer; shape-rendering: crispEdges; }
+.markdown-katex-preview .doneCritText0, .markdown-katex-preview .doneCritText1, .markdown-katex-preview .doneCritText2, .markdown-katex-preview .doneCritText3 { fill: black !important; }
+.markdown-katex-preview .activeCritText0, .markdown-katex-preview .activeCritText1, .markdown-katex-preview .activeCritText2, .markdown-katex-preview .activeCritText3 { fill: black !important; }
+.markdown-katex-preview .titleText { text-anchor: middle; font-size: 18px; fill: black; }
+.markdown-katex-preview .node text { font-family: 'trebuchet ms', verdana, arial; font-size: 14px; }
+.markdown-katex-preview div.mermaidTooltip { position: absolute; text-align: center; max-width: 200px; padding: 2px; font-family: 'trebuchet ms', verdana, arial; font-size: 12px; border: 1px solid rgb(170, 170, 51); border-radius: 2px; pointer-events: none; z-index: 100; background: rgb(255, 255, 222); }
+.markdown-katex-preview[data-use-github-style="true"] { color: rgb(85, 85, 85); background-color: rgb(255, 255, 255); }
+.markdown-katex-preview > :first-child { margin-top: 0px; }
+.markdown-katex-preview h1, .markdown-katex-preview h2, .markdown-katex-preview h3, .markdown-katex-preview h4, .markdown-katex-preview h5, .markdown-katex-preview h6 { line-height: 1.2; margin-top: 1em; margin-bottom: 16px; color: rgb(255, 255, 255); }
+.markdown-katex-preview[data-use-github-style="true"] h1, .markdown-katex-preview[data-use-github-style="true"] h2, .markdown-katex-preview[data-use-github-style="true"] h3, .markdown-katex-preview[data-use-github-style="true"] h4, .markdown-katex-preview[data-use-github-style="true"] h5, .markdown-katex-preview[data-use-github-style="true"] h6 { color: rgb(85, 85, 85); }
+.markdown-katex-preview h1 { font-size: 2.4em; font-weight: 300; padding-bottom: 0.3em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(82, 91, 111); }
+.markdown-katex-preview h2 { font-size: 1.8em; font-weight: 400; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(82, 91, 111); }
+.markdown-katex-preview h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-katex-preview h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-katex-preview h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-katex-preview h6 { font-size: 1em; font-weight: 600; }
+.markdown-katex-preview[data-use-github-style="true"] h1, .markdown-katex-preview[data-use-github-style="true"] h2 { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(231, 231, 231); }
+.markdown-katex-preview strong { color: rgb(255, 255, 255); }
+.markdown-katex-preview[data-use-github-style="true"] strong { color: rgb(85, 85, 85); }
+.markdown-katex-preview del { color: rgb(139, 157, 177); }
+.markdown-katex-preview a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-katex-preview a { color: rgb(0, 136, 204); text-decoration: none; }
+.markdown-katex-preview a:hover { color: rgb(0, 80, 163); text-decoration: none; }
+.markdown-katex-preview img { max-width: 100%; }
+.markdown-katex-preview > p { margin-top: 0px; margin-bottom: 16px; }
+.markdown-katex-preview > ul, .markdown-katex-preview > ol { margin-bottom: 16px; }
+.markdown-katex-preview ul, .markdown-katex-preview ol { padding-left: 2em; }
+.markdown-katex-preview ul.no-list, .markdown-katex-preview ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-katex-preview ul ul, .markdown-katex-preview ul ol, .markdown-katex-preview ol ol, .markdown-katex-preview ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-katex-preview li { margin-bottom: 0px; }
+.markdown-katex-preview li > p { margin-top: 0px; margin-bottom: 0px; }
+.markdown-katex-preview blockquote { margin: 16px 0px; font-size: inherit; padding: 0px 15px; color: rgb(139, 157, 177); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(82, 91, 111); }
+.markdown-katex-preview blockquote > :first-child { margin-top: 0px; }
+.markdown-katex-preview blockquote > :last-child { margin-bottom: 0px; }
+.markdown-katex-preview[data-use-github-style="true"] blockquote { color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-katex-preview hr { height: 4px; margin: 32px 0px; border: 0px none; background-color: rgb(82, 91, 111); }
+.markdown-katex-preview[data-use-github-style="true"] hr { background-color: rgb(231, 231, 231); }
+.markdown-katex-preview table { margin: 10px 0px 15px; border-collapse: collapse; }
+.markdown-katex-preview table th { font-weight: bold; color: rgb(255, 255, 255); }
+.markdown-katex-preview table td, .markdown-katex-preview table th { border: 1px solid rgb(82, 91, 111); padding: 5px 10px; }
+.markdown-katex-preview table th { padding: 5px 10px; }
+.markdown-katex-preview[data-use-github-style="true"] th { color: rgb(85, 85, 85); }
+.markdown-katex-preview[data-use-github-style="true"] td, .markdown-katex-preview[data-use-github-style="true"] th { border: 1px solid rgb(221, 221, 221); }
+.markdown-katex-preview code { font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; color: rgb(255, 255, 255); font-size: 0.85em !important; background-color: rgb(65, 72, 88); }
+.markdown-katex-preview[data-use-github-style="true"] code { color: inherit; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-katex-preview pre > code { padding: 0px; margin: 0px; word-break: normal; white-space: pre; border: 0px; font-size: 0.85em !important; background: transparent; }
+.markdown-katex-preview .highlight { margin-bottom: 16px; }
+.markdown-katex-preview .highlight pre, .markdown-katex-preview pre { font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; padding: 16px; overflow: auto; line-height: 1.45; color: rgb(188, 199, 210); border: rgb(82, 91, 111); border-radius: 3px; font-size: 0.85em !important; background-color: rgb(56, 62, 76); }
+.markdown-katex-preview[data-use-github-style="true"] .highlight pre, .markdown-katex-preview[data-use-github-style="true"] pre { color: rgb(85, 85, 85); background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-katex-preview .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-katex-preview pre { word-wrap: normal; }
+.markdown-katex-preview pre code, .markdown-katex-preview pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-katex-preview pre code::before, .markdown-katex-preview pre tt::before, .markdown-katex-preview pre code::after, .markdown-katex-preview pre tt::after { content: normal; }
+.markdown-katex-preview p, .markdown-katex-preview blockquote, .markdown-katex-preview ul, .markdown-katex-preview ol, .markdown-katex-preview dl, .markdown-katex-preview pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-katex-preview pre.editor-colors { margin: 16px 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(56, 62, 76); }
+.markdown-katex-preview kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(82, 91, 111) rgb(82, 91, 111) rgb(69, 77, 94); background-color: rgb(65, 72, 88); }
+.markdown-katex-preview[data-use-github-style="true"] kbd { color: rgb(85, 85, 85); border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-katex-preview .pagebreak, .markdown-katex-preview .newpage { page-break-before: always; }
+@media screen and (min-width: 914px) { 
+  .markdown-katex-preview { width: 854px; margin: 10px auto; overflow-y: scroll; background: rgb(48, 53, 65); }
+}
+@media screen and (max-width: 400px) { 
+  .markdown-katex-preview { font-size: 14px; }
+}
+@media screen and (min-width: 914px) { 
+  .markdown-katex-preview[data-use-github-style="true"] { background: rgb(255, 255, 255); }
+}
+@media print { 
+  .markdown-katex-preview { background-color: rgb(48, 53, 65); }
+  .markdown-katex-preview h1, .markdown-katex-preview h2, .markdown-katex-preview h3, .markdown-katex-preview h4, .markdown-katex-preview h5, .markdown-katex-preview h6 { color: rgb(255, 255, 255); }
+  .markdown-katex-preview blockquote { color: rgb(139, 157, 177); }
+  .markdown-katex-preview table, .markdown-katex-preview pre { page-break-inside: avoid; }
+  .markdown-katex-preview img { display: block; max-width: 100%; max-height: 100%; }
+  .markdown-katex-preview pre, .markdown-katex-preview code { word-wrap: break-word; }
+}
+@media print { 
+  .markdown-katex-preview[data-use-github-style="true"] { background: rgb(255, 255, 255); }
+  .markdown-katex-preview[data-use-github-style="true"] h1, .markdown-katex-preview[data-use-github-style="true"] h2, .markdown-katex-preview[data-use-github-style="true"] h3, .markdown-katex-preview[data-use-github-style="true"] h4, .markdown-katex-preview[data-use-github-style="true"] h5, .markdown-katex-preview[data-use-github-style="true"] h6 { color: rgb(34, 34, 34); }
+  .markdown-katex-preview[data-use-github-style="true"] blockquote { color: rgb(119, 119, 119); }
+  .markdown-katex-preview[data-use-github-style="true"] pre { border: 2px solid rgb(246, 246, 246); }
+}
+.markdown-katex-preview .mermaid { margin-bottom: 16px; }
+.markdown-katex-preview .mermaid .edgePath .path { stroke: rgb(255, 255, 255); }
+.markdown-katex-preview .mermaid .edgePath marker path { fill: rgb(255, 255, 255) !important; opacity: 1 !important; }
+.markdown-katex-preview .mermaid line, .markdown-katex-preview .mermaid marker { stroke: rgb(255, 255, 255) !important; opacity: 1 !important; }
+.markdown-katex-preview .mermaid .messageText { fill: rgb(255, 255, 255); }
+.markdown-katex-preview[data-use-github-style="true"] .mermaid .edgePath .path { stroke: rgb(85, 85, 85); }
+.markdown-katex-preview[data-use-github-style="true"] .mermaid marker path { fill: rgb(85, 85, 85) !important; opacity: 1 !important; }
+.markdown-katex-preview[data-use-github-style="true"] line, .markdown-katex-preview[data-use-github-style="true"] marker { stroke: rgb(85, 85, 85) !important; opacity: 1 !important; }
+.markdown-katex-preview[data-use-github-style="true"] .messageText { fill: rgb(85, 85, 85); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors, .markdown-katex-preview .github-syntax-theme .host { color: rgb(51, 51, 51); background-color: rgb(247, 247, 247); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors .gutter, .markdown-katex-preview .github-syntax-theme .host .gutter { color: rgb(179, 179, 179); background-color: rgb(255, 255, 255); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors .gutter .line-number.cursor-line, .markdown-katex-preview .github-syntax-theme .host .gutter .line-number.cursor-line { color: rgb(77, 77, 77); background-color: rgb(245, 245, 245); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors .gutter .line-number.cursor-line-no-selection, .markdown-katex-preview .github-syntax-theme .host .gutter .line-number.cursor-line-no-selection { color: rgb(77, 77, 77); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors .wrap-guide, .markdown-katex-preview .github-syntax-theme .host .wrap-guide { color: rgb(223, 223, 223); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors .indent-guide, .markdown-katex-preview .github-syntax-theme .host .indent-guide { color: rgb(223, 223, 223); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors .invisible-character, .markdown-katex-preview .github-syntax-theme .host .invisible-character { color: rgb(223, 223, 223); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors .search-results .marker .region, .markdown-katex-preview .github-syntax-theme .host .search-results .marker .region { border: rgb(0, 0, 0); background-color: transparent; }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors .search-results .marker.current-result .region, .markdown-katex-preview .github-syntax-theme .host .search-results .marker.current-result .region { border: rgb(0, 0, 0); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors.is-focused .cursor, .markdown-katex-preview .github-syntax-theme .host(.is-focused) .cursor { border-color: rgb(0, 0, 0); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors.is-focused .selection .region, .markdown-katex-preview .github-syntax-theme .host(.is-focused) .selection .region { background-color: rgba(178, 215, 255, 0.4); }
+.markdown-katex-preview .github-syntax-theme pre.editor-colors.is-focused .line-number.cursor-line-no-selection, .markdown-katex-preview .github-syntax-theme pre.editor-colors.is-focused .line.cursor-line, .markdown-katex-preview .github-syntax-theme .host(.is-focused) .line-number.cursor-line-no-selection, .markdown-katex-preview .github-syntax-theme .host(.is-focused) .line.cursor-line { background-color: rgba(240, 240, 240, 0.498039); }
+.markdown-katex-preview .github-syntax-theme .comment { color: rgb(176, 176, 176); }
+.markdown-katex-preview .github-syntax-theme .string, .markdown-katex-preview .github-syntax-theme .string .constant.character.escape { color: rgb(34, 115, 195); }
+.markdown-katex-preview .github-syntax-theme .constant.numeric { color: rgb(0, 153, 204); }
+.markdown-katex-preview .github-syntax-theme .constant.language { color: rgb(0, 153, 204); }
+.markdown-katex-preview .github-syntax-theme .constant.character, .markdown-katex-preview .github-syntax-theme .constant.other.rgb-value { color: rgb(0, 153, 204); }
+.markdown-katex-preview .github-syntax-theme .constant.numeric.line-number.find-in-files, .markdown-katex-preview .github-syntax-theme .constant.numeric.line-number.match.find-in-files { color: rgb(171, 176, 179); }
+.markdown-katex-preview .github-syntax-theme .entity.name.class { color: rgb(0, 153, 204); }
+.markdown-katex-preview .github-syntax-theme .entity.other.inherited-class { color: rgb(0, 153, 204); }
+.markdown-katex-preview .github-syntax-theme .meta.tag.any.html, .markdown-katex-preview .github-syntax-theme .meta.tag.block.any.html { color: rgb(171, 176, 179); }
+.markdown-katex-preview .github-syntax-theme .entity.name.tag { color: rgb(99, 163, 92); }
+.markdown-katex-preview .github-syntax-theme .entity.name.function { color: rgb(133, 103, 181); }
+.markdown-katex-preview .github-syntax-theme .entity.other.attribute-name, .markdown-katex-preview .github-syntax-theme .entity.other.attribute-name .punctuation.definition.entity.scss, .markdown-katex-preview .github-syntax-theme .entity.other.attribute-name.id.css, .markdown-katex-preview .github-syntax-theme .entity.other.attribute-name.id.css .punctuation.definition.entity.css, .markdown-katex-preview .github-syntax-theme .entity.other.attribute-name.class.css .punctuation.definition.entity.css { color: rgb(133, 103, 181); }
+.markdown-katex-preview .github-syntax-theme .punctuation.definition.tag.begin.html, .markdown-katex-preview .github-syntax-theme .punctuation.definition.tag.end.html, .markdown-katex-preview .github-syntax-theme .punctuation.definition.tag.html, .markdown-katex-preview .github-syntax-theme .meta.tag.block.any.html { color: rgb(51, 51, 51); }
+.markdown-katex-preview .github-syntax-theme .keyword.control { color: rgb(173, 28, 93); }
+.markdown-katex-preview .github-syntax-theme .keyword.operator { color: rgb(133, 103, 181); }
+.markdown-katex-preview .github-syntax-theme .storage { color: rgb(173, 28, 93); }
+.markdown-katex-preview .github-syntax-theme .storage.type { color: rgb(173, 28, 93); }
+.markdown-katex-preview .github-syntax-theme .support.function { color: rgb(0, 153, 204); }
+.markdown-katex-preview .github-syntax-theme .support.constant { color: rgb(0, 153, 204); }
+.markdown-katex-preview .github-syntax-theme .support.type, .markdown-katex-preview .github-syntax-theme .support.class, .markdown-katex-preview .github-syntax-theme .meta.property-name.scss { color: rgb(0, 153, 204); }
+.markdown-katex-preview .github-syntax-theme .support.other.variable { color: rgb(0, 0, 0); }
+.markdown-katex-preview .github-syntax-theme .invalid, .markdown-katex-preview .github-syntax-theme .invalid.illegal { color: rgb(248, 248, 248); background-color: rgb(181, 42, 29); }
+.markdown-katex-preview .github-syntax-theme .invalid.deprecated { color: rgb(181, 42, 29); background-color: rgb(255, 255, 255); }
+.markdown-katex-preview .github-syntax-theme .entity.name.filename.find-in-files { color: rgb(0, 0, 0); }
+.markdown-katex-preview .github-syntax-theme .source.css .punctuation.definition.entity, .markdown-katex-preview .github-syntax-theme .punctuation.terminator.rule.scss { color: rgb(0, 0, 0); }
+.markdown-katex-preview .github-syntax-theme .source.css .entity.other.attribute-name.pseudo-class, .markdown-katex-preview .github-syntax-theme .source.css .entity.other.attribute-name.pseudo-element { color: rgb(173, 28, 93); }
+.markdown-katex-preview .github-syntax-theme .source.css .meta.value, .markdown-katex-preview .github-syntax-theme .source.css .support.constant, .markdown-katex-preview .github-syntax-theme .source.css .support.function { color: rgb(99, 163, 92); }
+.markdown-katex-preview .github-syntax-theme .source.scss .entity.other.attribute-name.pseudo-class, .markdown-katex-preview .github-syntax-theme .source.scss .entity.other.attribute-name.pseudo-element { color: rgb(173, 28, 93); }
+.markdown-katex-preview .github-syntax-theme .support.constant.property-value, .markdown-katex-preview .github-syntax-theme .source.scss .support.function, .markdown-katex-preview .github-syntax-theme .meta.property-value.scss { color: rgb(99, 163, 92); }
+.markdown-katex-preview .github-syntax-theme .variable, .markdown-katex-preview .github-syntax-theme .source.scss .variable, .markdown-katex-preview .github-syntax-theme .variable.interpolation.scss, .markdown-katex-preview .github-syntax-theme .source.scss .meta.set.variable { color: rgb(222, 104, 173); }
+.markdown-katex-preview .github-syntax-theme .keyword.control.else.scss, .markdown-katex-preview .github-syntax-theme .keyword.control.if.scss, .markdown-katex-preview .github-syntax-theme .keyword.control.content.scss { color: rgb(99, 163, 92); }
+.markdown-katex-preview .github-syntax-theme .keyword.other.unit { color: rgb(173, 28, 93); }
+.markdown-katex-preview .github-syntax-theme .keyword.other.important { color: rgb(235, 69, 53); }
+.markdown-katex-preview .github-syntax-theme .entity.name.tag.reference.scss { color: rgb(181, 127, 0); }
+.markdown-katex-preview .github-syntax-theme .entity.name.type.new.js { color: rgb(133, 103, 181); }
+.markdown-katex-preview .github-syntax-theme .variable.language.js { color: rgb(238, 106, 66); }
+.markdown-katex-preview .github-syntax-theme .variable.parameter.function { color: rgb(181, 127, 0); }
+.markdown-katex-preview .github-syntax-theme .source.js .meta.function .entity.name.function, .markdown-katex-preview .github-syntax-theme .source.js .entity.name.function .meta.function { color: rgb(133, 103, 181); }
+.markdown-katex-preview .github-syntax-theme .source.php .entity.name.type.class { color: rgb(238, 106, 66); }
+.markdown-katex-preview .github-syntax-theme .punctuation.definition.heading.markdown, .markdown-katex-preview .github-syntax-theme .punctuation.definition.italic.markdown, .markdown-katex-preview .github-syntax-theme .punctuation.definition.bold.markdown, .markdown-katex-preview .github-syntax-theme .punctuation.definition.string.begin.markdown, .markdown-katex-preview .github-syntax-theme .punctuation.definition.string.end.markdown, .markdown-katex-preview .github-syntax-theme .punctuation.definition.metadata.markdown, .markdown-katex-preview .github-syntax-theme .punctuation.definition.link.markdown, .markdown-katex-preview .github-syntax-theme .punctuation.definition.blockquote.markdown, .markdown-katex-preview .github-syntax-theme .punctuation.definition.raw.markdown { color: rgb(173, 28, 93); }
+.markdown-katex-preview .github-syntax-theme .punctuation.section.function.scss { color: rgb(99, 163, 92); }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .meta.separator { color: rgb(179, 179, 179); }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .markup.raw.block { color: rgb(0, 0, 0); }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .markup.raw.inline { color: rgb(0, 0, 0); }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .meta.link, .markdown-katex-preview .github-syntax-theme .text.html.markdown .meta.image { color: rgb(65, 131, 196); }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .markup.underline.link, .markdown-katex-preview .github-syntax-theme .text.html.markdown .constant.other.reference { font-style: italic; }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .markup.list { color: rgb(238, 106, 66); }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .markup.bold { font-weight: bold; }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .markup.italic { font-style: italic; }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .markup.bold .markup.italic { font-weight: bold; font-style: italic; }
+.markdown-katex-preview .github-syntax-theme .text.html.markdown .markup.italic .markup.bold { font-weight: bold; font-style: italic; }
+.markdown-katex-preview .github-syntax-theme .string.quoted.double.html .invalid.illegal.bad-ampersand.html { color: rgb(34, 115, 195); background-color: rgb(255, 255, 255); }
+.markdown-katex-preview .github-syntax-theme .bracket-matcher .region { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgba(240, 192, 0, 0.8); z-index: 100; background-color: rgba(255, 214, 51, 0.0980392); }
+.markdown-katex-preview .github-syntax-theme .meta.tag.template.angular { color: rgb(34, 115, 195); }
+.markdown-katex-preview .github-syntax-theme .meta.tag.template.angular .punctuation.definition.block.begin.angular, .markdown-katex-preview .github-syntax-theme .meta.tag.template.angular .punctuation.definition.block.end.angular, .markdown-katex-preview .github-syntax-theme .meta.tag.template.angular .meta.brace.curly.js { color: rgb(173, 28, 93); }
+.markdown-katex-preview .github-syntax-theme .entity.other.attribute-name.html.angular, .markdown-katex-preview .github-syntax-theme .meta.attribute.html.angular { color: rgb(133, 103, 181) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host { color: rgb(51, 51, 51) !important; background-color: rgb(247, 247, 247) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors .gutter, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host .gutter { color: rgb(179, 179, 179) !important; background-color: rgb(255, 255, 255) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors .gutter .line-number.cursor-line, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host .gutter .line-number.cursor-line { color: rgb(77, 77, 77) !important; background-color: rgb(245, 245, 245) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors .gutter .line-number.cursor-line-no-selection, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host .gutter .line-number.cursor-line-no-selection { color: rgb(77, 77, 77) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors .wrap-guide, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host .wrap-guide { color: rgb(223, 223, 223) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors .indent-guide, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host .indent-guide { color: rgb(223, 223, 223) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors .invisible-character, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host .invisible-character { color: rgb(223, 223, 223) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors .search-results .marker .region, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host .search-results .marker .region { border: rgb(0, 0, 0) !important; background-color: transparent !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors .search-results .marker.current-result .region, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host .search-results .marker.current-result .region { border: rgb(0, 0, 0) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors.is-focused .cursor, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host(.is-focused) .cursor { border-color: rgb(0, 0, 0) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors.is-focused .selection .region, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host(.is-focused) .selection .region { background-color: rgba(178, 215, 255, 0.4) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors.is-focused .line-number.cursor-line-no-selection, .markdown-katex-preview[data-use-github-syntax-theme="true"] pre.editor-colors.is-focused .line.cursor-line, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host(.is-focused) .line-number.cursor-line-no-selection, .markdown-katex-preview[data-use-github-syntax-theme="true"] .host(.is-focused) .line.cursor-line { background-color: rgba(240, 240, 240, 0.498039) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .comment { color: rgb(176, 176, 176) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .string, .markdown-katex-preview[data-use-github-syntax-theme="true"] .string .constant.character.escape { color: rgb(34, 115, 195) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .constant.numeric { color: rgb(0, 153, 204) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .constant.language { color: rgb(0, 153, 204) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .constant.character, .markdown-katex-preview[data-use-github-syntax-theme="true"] .constant.other.rgb-value { color: rgb(0, 153, 204) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .constant.numeric.line-number.find-in-files, .markdown-katex-preview[data-use-github-syntax-theme="true"] .constant.numeric.line-number.match.find-in-files { color: rgb(171, 176, 179) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.name.class { color: rgb(0, 153, 204) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.other.inherited-class { color: rgb(0, 153, 204) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.tag.any.html, .markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.tag.block.any.html { color: rgb(171, 176, 179) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.name.tag { color: rgb(99, 163, 92) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.name.function { color: rgb(133, 103, 181) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.other.attribute-name, .markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.other.attribute-name .punctuation.definition.entity.scss, .markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.other.attribute-name.id.css, .markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.other.attribute-name.id.css .punctuation.definition.entity.css, .markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.other.attribute-name.class.css .punctuation.definition.entity.css { color: rgb(133, 103, 181) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.tag.begin.html, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.tag.end.html, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.tag.html, .markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.tag.block.any.html { color: rgb(51, 51, 51) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .keyword.control { color: rgb(173, 28, 93) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .keyword.operator { color: rgb(133, 103, 181) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .storage { color: rgb(173, 28, 93) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .storage.type { color: rgb(173, 28, 93) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .support.function { color: rgb(0, 153, 204) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .support.constant { color: rgb(0, 153, 204) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .support.type, .markdown-katex-preview[data-use-github-syntax-theme="true"] .support.class, .markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.property-name.scss { color: rgb(0, 153, 204) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .support.other.variable { color: rgb(0, 0, 0) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .invalid, .markdown-katex-preview[data-use-github-syntax-theme="true"] .invalid.illegal { color: rgb(248, 248, 248) !important; background-color: rgb(181, 42, 29) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .invalid.deprecated { color: rgb(181, 42, 29) !important; background-color: rgb(255, 255, 255) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.name.filename.find-in-files { color: rgb(0, 0, 0) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .source.css .punctuation.definition.entity, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.terminator.rule.scss { color: rgb(0, 0, 0) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .source.css .entity.other.attribute-name.pseudo-class, .markdown-katex-preview[data-use-github-syntax-theme="true"] .source.css .entity.other.attribute-name.pseudo-element { color: rgb(173, 28, 93) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .source.css .meta.value, .markdown-katex-preview[data-use-github-syntax-theme="true"] .source.css .support.constant, .markdown-katex-preview[data-use-github-syntax-theme="true"] .source.css .support.function { color: rgb(99, 163, 92) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .source.scss .entity.other.attribute-name.pseudo-class, .markdown-katex-preview[data-use-github-syntax-theme="true"] .source.scss .entity.other.attribute-name.pseudo-element { color: rgb(173, 28, 93) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .support.constant.property-value, .markdown-katex-preview[data-use-github-syntax-theme="true"] .source.scss .support.function, .markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.property-value.scss { color: rgb(99, 163, 92) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .variable, .markdown-katex-preview[data-use-github-syntax-theme="true"] .source.scss .variable, .markdown-katex-preview[data-use-github-syntax-theme="true"] .variable.interpolation.scss, .markdown-katex-preview[data-use-github-syntax-theme="true"] .source.scss .meta.set.variable { color: rgb(222, 104, 173) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .keyword.control.else.scss, .markdown-katex-preview[data-use-github-syntax-theme="true"] .keyword.control.if.scss, .markdown-katex-preview[data-use-github-syntax-theme="true"] .keyword.control.content.scss { color: rgb(99, 163, 92) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .keyword.other.unit { color: rgb(173, 28, 93) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .keyword.other.important { color: rgb(235, 69, 53) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.name.tag.reference.scss { color: rgb(181, 127, 0) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.name.type.new.js { color: rgb(133, 103, 181) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .variable.language.js { color: rgb(238, 106, 66) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .variable.parameter.function { color: rgb(181, 127, 0) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .source.js .meta.function .entity.name.function, .markdown-katex-preview[data-use-github-syntax-theme="true"] .source.js .entity.name.function .meta.function { color: rgb(133, 103, 181) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .source.php .entity.name.type.class { color: rgb(238, 106, 66) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.heading.markdown, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.italic.markdown, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.bold.markdown, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.string.begin.markdown, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.string.end.markdown, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.metadata.markdown, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.link.markdown, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.blockquote.markdown, .markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.definition.raw.markdown { color: rgb(173, 28, 93) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .punctuation.section.function.scss { color: rgb(99, 163, 92) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .meta.separator { color: rgb(179, 179, 179) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .markup.raw.block { color: rgb(0, 0, 0) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .markup.raw.inline { color: rgb(0, 0, 0) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .meta.link, .markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .meta.image { color: rgb(65, 131, 196) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .markup.underline.link, .markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .constant.other.reference { font-style: italic !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .markup.list { color: rgb(238, 106, 66) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .markup.bold { font-weight: bold !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .markup.italic { font-style: italic !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .markup.bold .markup.italic { font-weight: bold !important; font-style: italic !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .text.html.markdown .markup.italic .markup.bold { font-weight: bold !important; font-style: italic !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .string.quoted.double.html .invalid.illegal.bad-ampersand.html { color: rgb(34, 115, 195) !important; background-color: rgb(255, 255, 255) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .bracket-matcher .region { border-bottom-width: 1px !important; border-bottom-style: solid !important; border-bottom-color: rgba(240, 192, 0, 0.8) !important; z-index: 100 !important; background-color: rgba(255, 214, 51, 0.0980392) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.tag.template.angular { color: rgb(34, 115, 195) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.tag.template.angular .punctuation.definition.block.begin.angular, .markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.tag.template.angular .punctuation.definition.block.end.angular, .markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.tag.template.angular .meta.brace.curly.js { color: rgb(173, 28, 93) !important; }
+.markdown-katex-preview[data-use-github-syntax-theme="true"] .entity.other.attribute-name.html.angular, .markdown-katex-preview[data-use-github-syntax-theme="true"] .meta.attribute.html.angular { color: rgb(133, 103, 181) !important; }
+@keyframes bracket-animation {
+  from {
+    border-color: #ffffff;
+  }
+  40% {
+    border-color: rgba(188, 199, 210, 0.615);
+  }
+  to {
+    border-color: rgba(188, 199, 210, 0.45);
+  }
+}
+pre.editor-colors::shadow .bracket-matcher .region {
+  animation: bracket-animation 0.85s;
+  border: 1px solid rgba(188, 199, 210, 0.45);
+}
+
+.markdown-themeable-pdf-page-break {
+  border-top: 2px dotted #0098ff;
+}
+.markdown-themeable-pdf-page-break span {
+  opacity: .35;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+.source.ruby .variable.instance.ruby,
+.source.ruby .meta.embedded .variable.instance {
+  color: #d3b992;
+}
+.source.ruby .variable.instance.ruby .punctuation,
+.source.ruby .meta.embedded .variable.instance .punctuation {
+  color: #d3b992;
+}
+.source.ruby .constant.symbol.hashkey,
+.source.ruby .constant.symbol.hashkey .punctuation.definition.constant.hashkey.ruby {
+  color: #c65353;
+}
+pre.editor-colors,
+.host {
+  background-color: #303541;
+  color: #bcc7d2;
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: #505662;
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: #505662;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: #3d424b;
+}
+pre.editor-colors .gutter,
+.host .gutter {
+  background-color: #2b303b;
+  color: #636979;
+}
+pre.editor-colors .gutter .line-number,
+.host .gutter .line-number {
+  width: 100%;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  background-color: #303541;
+  color: #7b8293;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  color: #7b8293;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #7d8591;
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #bcc7d2;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  color: #ffffff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #454b56;
+}
+pre.editor-colors .search-results .marker .region,
+.host .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid #7d8591;
+}
+pre.editor-colors .search-results .marker.current-result .region,
+.host .search-results .marker.current-result .region {
+  border: 1px solid #ffffff;
+}
+.comment {
+  color: #7d8591;
+}
+.entity.name.type {
+  color: #d3b992;
+}
+.entity.other.inherited-class {
+  color: #ed8664;
+}
+.entity.name.accessor {
+  color: #dee2e3;
+}
+.keyword {
+  color: #4dbac7;
+}
+.keyword.control {
+  color: #4dbac7;
+}
+.keyword.operator {
+  color: #d3b992;
+}
+.keyword.operator.new {
+  color: #4dbac7;
+}
+.keyword.other.special-method {
+  color: #4dbac7;
+}
+.keyword.other.unit {
+  color: #ed8664;
+}
+.storage {
+  color: #4dbac7;
+}
+.storage.type {
+  color: #4dbac7;
+}
+.storage.type.flowtype {
+  color: #bcc7d2;
+}
+.storage.type.flowtype.variable {
+  color: #d3b992;
+}
+.storage.function {
+  color: #4dbac7;
+}
+.constant {
+  color: #ed8664;
+}
+.constant.dom {
+  color: #bcc7d2;
+}
+.constant.character.escape {
+  color: #4dbac7;
+}
+.constant.numeric {
+  /*color: @orange;*/
+  color: #d3b992;
+}
+.constant.other.color {
+  color: #4dbac7;
+}
+.constant.other.symbol {
+  color: #ed8664;
+}
+.variable {
+  color: #bcc7d2;
+}
+.variable.interpolation {
+  color: #9dadbe;
+}
+.variable.parameter.function {
+  color: #d3b992;
+}
+.variable.other {
+  color: #4dbac7;
+}
+.variable.other.instance,
+.variable.other.class {
+  color: #d3b992;
+}
+.variable.other.readwrite,
+.variable.other.property,
+.variable.other.object {
+  color: #bcc7d2;
+}
+.variable.other.constant {
+  color: #d3b992;
+}
+.variable.type {
+  color: #d3b992;
+}
+.variable.prototype {
+  color: #ed8664;
+}
+.variable.this,
+.variable.super {
+  color: #4dbac7;
+}
+.invalid.illegal {
+  background-color: #c65353;
+  color: #303541;
+}
+.string {
+  color: #ed8664;
+}
+.string.regexp {
+  color: #4dbac7;
+}
+.string.regexp .source.ruby.embedded {
+  color: #ed8664;
+}
+.string.other.link {
+  color: #c65353;
+}
+.string.unquoted.js {
+  color: #d3b992;
+}
+.punctuation.definition.comment {
+  color: #7d8591;
+}
+.punctuation.definition.string,
+.punctuation.definition.variable,
+.punctuation.definition.parameters,
+.punctuation.definition.array {
+  color: #bcc7d2;
+}
+.punctuation.definition.string.begin,
+.punctuation.definition.string.end {
+  color: #c65353;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #4dbac7;
+}
+.punctuation.definition.tag {
+  color: #2287a0;
+}
+.punctuation.definition.bold {
+  color: #d3b992;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #4dbac7;
+  font-style: italic;
+}
+.punctuation.class {
+  color: #bcc7d2;
+}
+.punctuation.section.embedded {
+  color: #ac3939;
+}
+.punctuation.terminator,
+.punctuation.key-value {
+  color: #d3b992;
+}
+.support.class {
+  color: #d3b992;
+}
+.support.function {
+  color: #d3b992;
+}
+.support.function.any-method {
+  color: #bcc7d2;
+}
+.support.function.misc {
+  color: #ed8664;
+}
+.entity.name.function {
+  color: #dee2e3;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #d3b992;
+}
+.entity.name.section {
+  color: #4dbac7;
+}
+.entity.name.tag {
+  color: #4dbac7;
+}
+.entity.other.attribute-name {
+  color: #d3b992;
+}
+.meta.class {
+  color: #d3b992;
+}
+.meta.link {
+  color: #ed8664;
+}
+.meta.require {
+  color: #4dbac7;
+}
+.meta.selector {
+  color: #4dbac7;
+}
+.meta.separator {
+  background-color: #3d424b;
+  color: #bcc7d2;
+}
+.meta.brace {
+  color: #bcc7d2;
+}
+.none {
+  color: #bcc7d2;
+}
+.markup.bold {
+  color: #ed8664;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #4dbac7;
+}
+.markup.deleted {
+  color: #c65353;
+}
+.markup.italic {
+  color: #4dbac7;
+  font-style: italic;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #4dbac7;
+}
+.markup.inserted {
+  color: #cae359;
+}
+.markup.list {
+  color: #c65353;
+}
+.markup.quote {
+  color: #ed8664;
+}
+.markup.raw.inline {
+  color: #cae359;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .markup.heading {
+  color: #ed8664;
+}
+.source.glsl .storage.modifier {
+  color: #4dbac7;
+}
+.source.glsl .support.function {
+  color: #4dbac7;
+}
+.source.glsl .support.variable {
+  color: #ed8664;
+}
+.source.ts .storage.type {
+  color: #4dbac7;
+}
+.source.ts .entity.name {
+  color: #4dbac7;
+}
+.source.ts .entity.name.function {
+  color: #dee2e3;
+}
+.source.ts .entity.instance {
+  color: #d3b992;
+}
+.source.ts .entity.inherited-class {
+  color: #d3b992;
+}
+.source.ts .parameter.function {
+  color: #bcc7d2;
+}
+.source.ts .language.variable {
+  color: #4dbac7;
+}
+.coffee.support.function {
+  color: #d3b992;
+}
+.xhtml.doctype,
+.sgml.doctype,
+.html.doctype {
+  color: #ed8664;
+}
+.c.dot-access {
+  color: #bcc7d2;
+}
+.objc.punctuation.scope {
+  color: #bcc7d2;
+}
+.objc.support.function {
+  color: #d3b992;
+}
+.objcpp .support {
+  color: #d3b992;
+}
+.cs.meta.body {
+  color: #bcc7d2;
+}
+.cs.meta.method,
+.cs.meta.namespace {
+  color: #d3b992;
+}
+.cs.meta.method.body,
+.cs.meta.namespace.body {
+  color: #bcc7d2;
+}
+.cs.meta.keyword.using {
+  color: #d3b992;
+}
+.cs.meta.keyword.using.other {
+  color: #4dbac7;
+}
+.cs.meta .variable.parameter.function {
+  color: #bcc7d2;
+}
+.shell.builtin.function {
+  color: #d3b992;
+}
+.shell.definition.variable {
+  color: #ed8664;
+}
+.dots .constant.other {
+  color: #4dbac7;
+}
+.regexp {
+  color: #ed8664 !important;
+}
+pre.editor-colors[mini] .scroll-view,
+.host([mini]) .scroll-view {
+  padding-left: 1px;
+}
+ </style> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/0.5.8/mermaid.min.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/0.5.8/mermaid.min.js"></script> </head> <body class="markdown-katex-preview" data-use-github-style="false" data-use-github-syntax-theme="false"> <h1 class="line" data-line="0" id="drought-risk-visualisation-toolkit-for-pacific-island-countries">Drought Risk Visualisation Toolkit for Pacific Island Countries</h1>
+<p class="line" data-line="2">This repository contains codes and demonstration interactive<br>
+Visualisation for the <strong>Drought Risk Visualisation Toolkit for Pacific Island Countries</strong> project proposal.</p>
+<p class="line" data-line="5">The full screeen interactive map of Samoa is accessible by clicking <a href="https://rawgit.com/nicolasfauchereau/drought_risk/master/notebooks/map.html">on this link</a></p>
+<p class="line" data-line="7">while below it is displayed in an HTML <code>iframe</code>, as it would be with <strong>CliDEsc</strong></p>
+<div align="center">
+<iframe width="1000" height="600" align="middle" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://rawgit.com/nicolasfauchereau/drought_risk/master/notebooks/map.html"></iframe>
+</div>
+ </body> </html>
